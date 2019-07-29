@@ -108,6 +108,7 @@ class ComposerStaticInitbc7eec8f9ec272c916f21a52804045cf
         'F' => 
         array (
             'Fideloper\\Proxy\\' => 16,
+            'Faker\\Provider\\' => 15,
             'Faker\\' => 6,
         ),
         'E' => 
@@ -312,6 +313,10 @@ class ComposerStaticInitbc7eec8f9ec272c916f21a52804045cf
         array (
             0 => __DIR__ . '/..' . '/fideloper/proxy/src',
         ),
+        'Faker\\Provider\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pelmered/fake-car/src',
+        ),
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
@@ -380,6 +385,7 @@ class ComposerStaticInitbc7eec8f9ec272c916f21a52804045cf
     );
 
     public static $classMap = array (
+        'App\\Car' => __DIR__ . '/../..' . '/app/Car.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -397,7 +403,6 @@ class ComposerStaticInitbc7eec8f9ec272c916f21a52804045cf
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'App\\Models\\Car' => __DIR__ . '/../..' . '/app/Car.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -408,7 +413,6 @@ class ComposerStaticInitbc7eec8f9ec272c916f21a52804045cf
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
         'BeyondCode\\DumpServer\\Dumper' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/Dumper.php',
         'BeyondCode\\DumpServer\\RequestContextProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/RequestContextProvider.php',
-        'CarTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CarTableSeeder.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonImmutable.php',
         'Carbon\\CarbonInterface' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterface.php',
@@ -439,6 +443,7 @@ class ComposerStaticInitbc7eec8f9ec272c916f21a52804045cf
         'Carbon\\Traits\\Units' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Units.php',
         'Carbon\\Traits\\Week' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Week.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
+        'CarsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CarsTableSeeder.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -597,9 +602,11 @@ class ComposerStaticInitbc7eec8f9ec272c916f21a52804045cf
         'Faker\\Provider\\Barcode' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/Barcode.php',
         'Faker\\Provider\\Base' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/Base.php',
         'Faker\\Provider\\Biased' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/Biased.php',
+        'Faker\\Provider\\CarData' => __DIR__ . '/..' . '/pelmered/fake-car/src/CarData.php',
         'Faker\\Provider\\Color' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/Color.php',
         'Faker\\Provider\\Company' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/Company.php',
         'Faker\\Provider\\DateTime' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/DateTime.php',
+        'Faker\\Provider\\Fakecar' => __DIR__ . '/..' . '/pelmered/fake-car/src/Fakecar.php',
         'Faker\\Provider\\File' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/File.php',
         'Faker\\Provider\\HtmlLorem' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/HtmlLorem.php',
         'Faker\\Provider\\Image' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/Image.php',

@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Car' => $baseDir . '/app/Car.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -23,7 +24,6 @@ return array(
     'App\\Http\\Middleware\\TrimStrings' => $baseDir . '/app/Http/Middleware/TrimStrings.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
-    'App\\Models\\Car' => $baseDir . '/app/Car.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
@@ -34,7 +34,6 @@ return array(
     'BeyondCode\\DumpServer\\DumpServerServiceProvider' => $vendorDir . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
     'BeyondCode\\DumpServer\\Dumper' => $vendorDir . '/beyondcode/laravel-dump-server/src/Dumper.php',
     'BeyondCode\\DumpServer\\RequestContextProvider' => $vendorDir . '/beyondcode/laravel-dump-server/src/RequestContextProvider.php',
-    'CarTableSeeder' => $baseDir . '/database/seeds/CarTableSeeder.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonImmutable' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonImmutable.php',
     'Carbon\\CarbonInterface' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterface.php',
@@ -65,6 +64,7 @@ return array(
     'Carbon\\Traits\\Units' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Units.php',
     'Carbon\\Traits\\Week' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Week.php',
     'Carbon\\Translator' => $vendorDir . '/nesbot/carbon/src/Carbon/Translator.php',
+    'CarsTableSeeder' => $baseDir . '/database/seeds/CarsTableSeeder.php',
     'Cron\\AbstractField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
     'Cron\\CronExpression' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
     'Cron\\DayOfMonthField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -223,9 +223,11 @@ return array(
     'Faker\\Provider\\Barcode' => $vendorDir . '/fzaninotto/faker/src/Faker/Provider/Barcode.php',
     'Faker\\Provider\\Base' => $vendorDir . '/fzaninotto/faker/src/Faker/Provider/Base.php',
     'Faker\\Provider\\Biased' => $vendorDir . '/fzaninotto/faker/src/Faker/Provider/Biased.php',
+    'Faker\\Provider\\CarData' => $vendorDir . '/pelmered/fake-car/src/CarData.php',
     'Faker\\Provider\\Color' => $vendorDir . '/fzaninotto/faker/src/Faker/Provider/Color.php',
     'Faker\\Provider\\Company' => $vendorDir . '/fzaninotto/faker/src/Faker/Provider/Company.php',
     'Faker\\Provider\\DateTime' => $vendorDir . '/fzaninotto/faker/src/Faker/Provider/DateTime.php',
+    'Faker\\Provider\\Fakecar' => $vendorDir . '/pelmered/fake-car/src/Fakecar.php',
     'Faker\\Provider\\File' => $vendorDir . '/fzaninotto/faker/src/Faker/Provider/File.php',
     'Faker\\Provider\\HtmlLorem' => $vendorDir . '/fzaninotto/faker/src/Faker/Provider/HtmlLorem.php',
     'Faker\\Provider\\Image' => $vendorDir . '/fzaninotto/faker/src/Faker/Provider/Image.php',
