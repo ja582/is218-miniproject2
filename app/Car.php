@@ -1,12 +1,12 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Car extends Model
 {
     protected $fillable = [
-        'Make', 'Model', 'Year',
+        'make', 'model', 'year',
     ];
 }

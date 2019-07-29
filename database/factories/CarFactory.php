@@ -5,8 +5,10 @@
 use App\Car;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(Car::class, function (Faker $faker) {
     return [
-        //
+        'make' => 'Toyota',
+        'model' => 'Camry',
+        'year' => 1990
     ];
 });
