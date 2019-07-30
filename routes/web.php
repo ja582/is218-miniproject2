@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
 Route::get('/', function () {
@@ -27,7 +23,6 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 Route::post('/contact', function () {
-    return view('welcome');
-});
 
-Route::get('/home', 'HomeController@index')->name('home');
+    echo 'hello i worked';
+});
